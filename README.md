@@ -49,5 +49,7 @@ If location detection fails, you can manually enter a city name.
 
 ---
 
-
+## 📘 Notes
+- I temporarily shared the .env file with you to save time and allow quick testing.  
+- The key inside is for testing purposes only
 

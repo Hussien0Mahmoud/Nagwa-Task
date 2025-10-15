@@ -1,37 +1,52 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Weather Dashboard</title>
+    
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+ 
     <link rel="stylesheet" href="/static/css/styles.css" />
   </head>
   <body>
-    <main class="container">
-      <section class="card" id="weather-card">
-        <div id="loader" class="loader hidden"></div>
-        <div id="error" class="error hidden"></div>
+  <main class="container">
+    <section class="card" id="weather-card">
+      <div id="loader" class="loader hidden"></div>
+      <div id="error" class="error hidden"></div>
 
-        <div class="top">
-          <h1 id="city">--</h1>
-          <div id="icon" class="icon"></div>
-        </div>
+      <div class="top">
+        <h1 id="city">--</h1>
+        <div id="icon" class="icon"></div>
+      </div>
 
-        <div class="details">
+      <div class="details">
+        <div class="temp-section">
           <div class="temp" id="temp">--°C</div>
-          <div class="meta">
-            <div>Humidity: <span id="humidity">--%</span></div>
-            <div>Wind: <span id="wind">-- m/s</span></div>
-            <div id="desc">--</div>
+        </div>
+        <div id="desc">--</div>
+        <div class="meta">
+          <div>
+            Humidity
+            <span id="humidity">--%</span>
+          </div>
+          <div>
+            Wind Speed
+            <span id="wind">-- m/s</span>
           </div>
         </div>
+      </div>
 
-        <form id="city-form" class="city-form">
-          <input id="city-input" placeholder="Enter city name" />
-          <button type="submit">Search</button>
-        </form>
-      </section>
-    </main>
+      <form id="city-form" class="city-form">
+        <input id="city-input" placeholder="Search for a city..." autocomplete="off" />
+        <button type="submit">Search</button>
+      </form>
+    </section>
+  </main>
     <script src="/static/js/script.js"></script>
   </body>
 </html>
+
+
